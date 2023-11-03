@@ -15,7 +15,9 @@ TODO
             - Wing
             - Sensors
 
-
+* Narrative based on 
+"Keeping PACE with NASA's Plankton, Aerosol, Cloud, ocean Ecosystem mission"
+https://youtu.be/VFpcNbcQz0M
 
 * Miro board for narrative timeline
 https://miro.com/app/board/uXjVMh5S6Rw=/?share_link_id=756237080224
