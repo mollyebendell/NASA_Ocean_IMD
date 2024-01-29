@@ -87,7 +87,7 @@ Material:
     - _Glossiness: 0.506
     - _GlossyReflections: 1
     - _LightingEnabled: 1
-    - _Metallic: 0.344
+    - _Metallic: -0.574834
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02

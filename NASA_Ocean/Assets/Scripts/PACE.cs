@@ -28,8 +28,8 @@ public class PACE : MonoBehaviour
 
         pacePose = new Vector3( radius * Mathf.Sin(time), radius * Mathf.Cos(time), 0 );
         //pace.transform.position = pacePose;
-        earth.transform.Rotate(new Vector3(0, time/300, 0));
-        data.transform.Rotate(new Vector3(0, time/300, 0));
+        earth.transform.Rotate(new Vector3(0, time / 300, 0));
+        data.transform.Rotate(new Vector3(0, time / 300, 0));
         dataMaterial.SetFloat("_Metallic", Mathf.Sin(time*0.5f));
         time += Time.deltaTime;
     }
