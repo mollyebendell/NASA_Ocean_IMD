@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &186551800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c2fd497f6ed84b45a4721b3018bfadc, type: 3}
+  m_PrefabInstance: {fileID: 1860678728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &247294167
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +162,11 @@ Transform:
   - {fileID: 640269049}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &339101697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 769e9df53cf8666488e922b586c50397, type: 3}
+  m_PrefabInstance: {fileID: 1272592612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &502645187
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502645189}
   - component: {fileID: 502645188}
+  - component: {fileID: 502645190}
   m_Layer: 0
   m_Name: Planktons
   m_TagString: Untagged
@@ -186,6 +197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6a2a15e384f30489f2d19d26621ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rhizosolenia: {fileID: 186551800}
+  emiliana: {fileID: 607432795}
+  protoperidinium: {fileID: 339101697}
   planktons: []
   acceleration: []
   velocity: []
@@ -207,11 +221,44 @@ Transform:
   - {fileID: 1879796823}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &502645190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502645187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e12a5e86ff041c8a382675a496f832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rhizosolenia: {fileID: 186551800}
+  emiliana: {fileID: 607432795}
+  protoperidinium: {fileID: 339101697}
+  width: 640
+  height: 360
 --- !u!4 &575507956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5c2fd497f6ed84b45a4721b3018bfadc, type: 3}
   m_PrefabInstance: {fileID: 1860678728}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &575507957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186551800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"red","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &587140250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,8 +314,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cfb76c37618a5c043975edf795833f30, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1128484943}
   m_SourcePrefab: {fileID: 100100000, guid: cfb76c37618a5c043975edf795833f30, type: 3}
+--- !u!1 &607432795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cfb76c37618a5c043975edf795833f30, type: 3}
+  m_PrefabInstance: {fileID: 587140250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &625527036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5641,6 +5696,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfb76c37618a5c043975edf795833f30, type: 3}
   m_PrefabInstance: {fileID: 587140250}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1128484943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607432795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"green","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &1272592612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5696,7 +5767,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 769e9df53cf8666488e922b586c50397, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1879796824}
   m_SourcePrefab: {fileID: 100100000, guid: 769e9df53cf8666488e922b586c50397, type: 3}
 --- !u!1 &1459083054
 GameObject:
@@ -5881,13 +5955,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c2fd497f6ed84b45a4721b3018bfadc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 575507957}
   m_SourcePrefab: {fileID: 100100000, guid: 5c2fd497f6ed84b45a4721b3018bfadc, type: 3}
 --- !u!4 &1879796823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 769e9df53cf8666488e922b586c50397, type: 3}
   m_PrefabInstance: {fileID: 1272592612}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1879796824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339101697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"blue","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
